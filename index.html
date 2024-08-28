@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>TO-DO LIST</h1>
+
+            <div class="social-medias">
+                <a href="https://www.linkedin.com/in/lucas-silva-santos-439815a2/" target="_blank">
+                    <img src="./images/logo-linkedin.svg" alt="logo linkedin">
+                </a>
+
+                <a href="https://github.com/lucasssantos94" target="_blank">
+                    <img src="./images/logo-github.svg" alt="logo github">
+                </a>
+
+                <a href="https://t.me/lucas_ssantos94" target="_blank">
+                    <img src="./images/logo-telegram.svg" alt="logo telegram">
+                </a>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <div class="container">
+
+            <div class="left">
+
+                <div class="add-task">
+                    <div class="title">
+                        <div class="box-img">
+
+                            <img src="./images/icon-pencil.svg" alt="">
+                        </div>
+
+                        <h2>Criar nova tarefa</h2>
+                    </div>
+
+                    <form name="form-task">
+
+                        <input type="text" placeholder="Nome da tarefa" name="inputTask" autocomplete='off'>
+
+                        <input type="submit" value="" name="btnTask">
+                    </form>
+
+                </div>
+
+                <div class="task-of-day">
+                    <div class="title">
+                        <div class="box-img">
+
+                            <img src="./images/icon-list.svg" alt="">
+                        </div>
+
+                        <h2>Tarefas</h2>
+                    </div>
+
+                    <ul class="list-tasks">
+                        <li>
+                            <div class="task-text">
+                                <div class="mark"></div>
+                                <p>Tarefa</p>
+                            </div>
+                            <button class="btn-delete">
+                                <img src="./images/Trash_Empty.svg" alt="">
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+            </div>
+            <div class="right">
+                <div class="progress-container">
+                    <div class="title">
+                        <div class="box-img">
+
+                            <img src="./images/icon-chart.svg" alt="">
+                        </div>
+
+                        <h2>Progresso</h2>
+                    </div>
+
+                    <progress value="0" max="100" class="progress-bar"></progress>
+
+                    <div class="progress-porcentage">
+                        <p>0%</p>
+                        <p>50%</p>
+                        <p>100%</p>
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="task-completed">
+                    <div class="title">
+                        <div class="box-img">
+
+                            <img src="./images/icon-completed2.svg" alt="">
+                        </div>
+
+                        <h2>Tarefas Concluídas</h2>
+                    </div>
+
+                    <ul class="list-tasks list-completed">
+
+                    </ul>
+                    <div class="toast-complete">
+                        <img src="./images/img-trophy.png" alt="">
+                        <p>Parabéns! Você concluiu todas as tarefas!</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+    </main>
+
+
+    <!-- <footer>
+        Desenvolvido por Lucas Santos
+    </footer> -->
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
